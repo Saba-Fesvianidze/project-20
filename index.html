@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b05f4c9c1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{box-sizing:border-box;}
+        body{
+            padding:0;
+            margin:0;
+        }
+        .backimg{
+            background-image: url(../sabasimg.jpg);
+            background-size:cover;
+            background-position:center;
+            min-height:550px;
+            position:relative;
+        }
+        .backimg .titlemain{
+            position:absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color:white;
+            font-size:200%;
+            line-height:100px;
+        }
+        .backimg #text1{
+            position:absolute;
+            color:white;
+            background-color:black;
+            padding:3px;
+            bottom:2%;
+            left:2%;
+        }
+        .backimg #text2{
+            position: absolute;
+            bottom:2%;
+            right:2%;
+            color:white;
+        }
+        .topnav{
+            margin:0;
+            padding:10px;
+            background-color:black;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+        }
+        .topnav a{
+            float:left;
+            width:25%;
+            text-align: center;
+            text-decoration:none;
+            color:white;
+            padding:10px;
+        }
+        .topnav a:hover{
+            background-color:#aaa;
+            color:black;
+        }
+        .main{
+            max-width:700px;
+            margin:auto;
+            margin-top:20px;
+            padding:10px;
+        }
+        .quotebox{
+            background-color:#f1f1f1;
+            padding:13px;
+            border-left:6px solid #ccc;
+        }
+        .text3{
+            color:white;
+            background-color:black;
+            text-align: center;
+            width:150px;
+            margin: auto;
+        }
+        .text4{
+            color:white;
+            background-color:black;
+            text-align:center;
+            width:100px;
+            margin: auto;
+        }
+        .mainmenu{
+            box-shadow:1px 1px 3px 3px grey;
+        }
+        .menubar{
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            box-shadow:1px 1px 3px 3px grey;
+            padding:9px;
+        }
+        .menubar a{
+            text-decoration:none;
+            text-align:center;
+            width:50%;
+            padding:4px;
+            color:black;
+        }
+        .menubar #activebar{
+            color:white;
+            background-color: rgb(94, 91, 91);
+        }
+        .menulist{
+            padding:9px;
+        }
+        .mainmenu h5{
+            color:#aaa;
+        }
+        .text5{
+            color:white;
+            background-color:black;
+            text-align:center;
+            width:160px;
+            margin: auto;
+        }
+        h5{
+            color:#aaa;
+        }
+        .blacktxt span{
+            color:White;
+            background-color:black;
+            padding:2px;
+        }
+        .blacktxt p{
+            color:rgb(95, 94, 94);
+        }
+        .blacktxt p b{
+            color:rgb(95, 94, 94);
+        }
+        form input{
+            width:100%;
+            margin-top:7px;
+            padding:8px;
+            border:1px solid grey;
+        }
+        input[type=submit]{
+            border:none;
+            color:white;
+            background-color:black;
+            width:130px;
+        }
+        input[type=submit]:hover{
+            color:black;
+            background-color:grey;
+        }
+        .footer{
+            background-color:#ccc;
+            padding:20px;
+            text-align: center;
+        }
+        .footer a{
+            text-decoration:none;
+            color:black;
+            transition: 0.7s ease;
+        }
+        .footer a:hover{
+            color:crimson;
+        }
+        @media only screen and (max-width:600px){
+            #text1{
+                display:none;
+            }
+        }
+    </style>
+
+
+<div class="backimg">
+    <div class="titlemain">
+        <h1>The <br>Cafe</h1>
+    </div>
+    15 Adr street, 5015, NY 
+    <p id="text1">Open from 6am to 5pm</p>
+    <p id="text2">15 Adr street, 5015</p>
+</div>
+
+<div class="topnav">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">MENU</a>
+    <a href="#">WHERE</a>
+</div>
+<div class="main">
+    <div class="text3">
+       <p>ABOUT THE CAFE</p>
+    </div>
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+         amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+           consequat.</p>
+           <p>In addition to our full espresso and brew bar menu, we serve 
+            fresh made-to-order breakfast and lunch sandwiches, as well as a
+             selection of sides and salads and other good stuff</p>
+             <div class="quotebox">
+                <i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i>
+                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+             </div><br>
+             <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/coffeeshop.jpg" alt="Bar">
+             <p><b>Opening hours: </b> everyday from 6am to 5pm.</p>
+             <p><b>Address: </b>15 Adr street, 5015, NY</p>
+             <div class="text4">
+                <p>THE MENU</p>
+             </div>
+             <div class="mainmenu">
+             <div class="menubar">
+                <a id="activebar" href="#">Eat</a>
+                <a href="#">Drink</a>
+             </div>
+             <div class="menulist">
+                <p>Bread Basket</p>
+                <h5>Assortment of fresh baked fruit breads and muffins 5.50</h5><br>
+                <p>Honey Almond Granola with Fruits</p>
+                <h5>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</h5><br>
+                <p>Belgian Waffle</p>
+                <h5>Vanilla flavored batter with malted flour 7.50</h5><br>
+                <p>Scrambled eggs</p>
+                <h5>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</h5><br>
+                <p>Blueberry Pancakes</p>
+                <h5>With syrup, butter and lots of berries 8.50</h5><br>
+             </div>
+             </div><br>
+             <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/coffeehouse2.jpg" alt="coffee"><br>
+             <div class="text5">
+                <p>WHERE TO FIND US</p>
+             </div><br>
+             <h5>Find us at some address at some place.</h5>
+             <img style="width:100%;height:auto;" src="https://www.w3schools.com/w3images/map.jpg" alt="City">
+             <div class="blacktxt">
+                <p><span>FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we
+                    will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                    <p><b>RESERVE</b> a table, ask for today's special or just send us a message</p>
+             </div>
+             <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="How many people">
+                <input type="datetime-local">
+                <input type="text" placeholder="Message \ Special requirements">
+                <input type="submit" value="SEND MESSAGE">
+             </form>
+
+</div>
+<div class="footer">
+    <p>Created by<a href="#"> Saba Fesvianidze</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--
+<button onclick="replace()">Concat</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+<p id="demo10"></p>
+<p id="demo11"></p>
+<p id="demo12"></p>
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
+<p id="demo16"></p>
+<p id="demo17"></p>
+<p id="demo18"></p>
+<p id="demo19"></p>
+<p id="demo20"></p>
+<p id="demo21"></p>
+<p id="demo22"></p>
+<p id="demo23"></p>
+<p id="demo24"></p>
+<p id="demo25"></p>
+<p id="demo26"></p>
+<p id="demo27"></p>
+<p id="demo28"></p>
+<p id="demo29"></p>
+<p id="demo30"></p>
+<p id="demo31"></p>
+<p id="demo32"></p>
+<p id="demo33"></p>
+<p id="demo34"></p>
+<p id="demo35"></p>
+<p id="demo36"></p>
+<p id="demo37"></p>
+<p id="demo38"></p>
+<p id="demo39"></p>
+<p id="demo40"></p>
+<p id="demo41"></p>
+
+<button onclick="func1()">Sort Alphabetic</button>
+<button onclick="func2()">Sort Numerically</button>
+<button onclick="func3()">Sort random</button>
+<button onclick="func4()">Sort yates method</button><br><br><br>
+
+<button onclick="sorts()">Sort</button>    
+
+   -->
+
+    <script src="index.js"></script>
+</body>
+</html>
